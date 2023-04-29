@@ -6,5 +6,9 @@ module.exports = {
     title: `Novvsworld`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+      `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+  ],
 }

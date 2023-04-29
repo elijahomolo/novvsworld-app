@@ -1,0 +1,152 @@
+/***** Top content *****/
+@media (max-width: 800px) {
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+.card2 {
+    margin-bottom: 200px;
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+}
+
+.third-background {
+    background: url('https://novvsworld.s3.amazonaws.com/images/DSC03640.jpg') center no-repeat;
+    background-size: contain;
+    -Webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    justify-content: center;
+}
+
+.card {
+
+
+}
+.music-card {
+    width: 50%;
+    height: 30%;
+    background-color: #080000;
+    justify-content: center;
+
+}
+
+.top-content {
+    padding: 210px 0;
+}
+
+.top-content .text {
+    color: #ffffff;
+}
+
+.top-content .text h1  {
+    color: #ffffff;
+}
+
+.top-content .description {
+    margin: 30px 0 10px 0;
+}
+
+.top-content .description p {
+    opacity: 0.8;
+}
+
+.top-content .top-big-link {
+    margin-top: 45px;
+}
+
+.btn-link-1 {
+    display: inline-block;
+    height: 50px;
+    margin: 0 5px;
+    padding: 0 28px;
+    background: #59047c;
+    background: rgba(155, 89, 182, 0.7);
+    border: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #fff;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+.btn-link-1:hover, .btn-link-1:focus, .btn-link-1:active, .btn-link-1:active:focus,
+.btn-link-1.btn-primary:not(:disabled):not(.disabled):active,
+.btn-link-1.btn-primary:not(:disabled):not(.disabled):active:focus {
+    background: #9b59b6;
+    background: rgba(155, 89, 182, 0.9);
+    outline: 0;
+    color: #fff;
+    box-shadow: none;
+}
+
+h5 {
+    color: #fff;
+}
+
+.link {
+    background-color: #080000;
+
+}
+
+.listen {
+    object-fit: cover;
+    height: 50px;
+}
+
+.soundcloud {
+    background: url("https://novvsworld.s3.amazonaws.com/images/icons8-soundcloud.svg") center no-repeat;
+    background-size: 40px;
+
+}
+
+.bandcamp {
+    background: url("https://novvsworld.s3.amazonaws.com/images/icons8-bandcamp.svg") center no-repeat;
+    background-size: 40px;
+}
+
+.spotify {
+    background: url("https://novvsworld.s3.amazonaws.com/images/Spotify_logo_with_text.svg") center no-repeat;
+    background-size: 45%;
+}
+
+.apple {
+    background: url("https://novvsworld.s3.amazonaws.com/images/US-UK_Apple_Music_Listen_on_Lockup_RGB_blk_072720.svg") center no-repeat;
+    background-size: 50%;
+}
+
+.amazon {
+    background: url("https://novvsworld.s3.amazonaws.com/images/amazon-music-white.png") center no-repeat;
+    background-size: 50%;
+}
+
+.tidal {
+    background: url("https://novvsworld.s3.amazonaws.com/images/Tidal_(service)_logo.svg") center no-repeat;
+    background-size: 50%;
+}
+
+.itunes {
+    background: url("https://novvsworld.s3.amazonaws.com/images/ITunes_Store_logo.svg") center no-repeat;
+    background-size: 50%;
+}
+
+img {
+    bottom: 0;
+    left: 0;
+    height: 16rem;
+    margin-bottom: 30px;
+
+    object-fit: fill;
+    object-position: center;
+}

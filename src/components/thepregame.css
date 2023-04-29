@@ -1,0 +1,54 @@
+.pregame_background {
+    background-image: url('https://novvsworld.s3.amazonaws.com/images/original+kaymist+cropped+revised+22-min.png');
+    background-size: 100vmax;
+    background-position: center;
+
+}
+
+
+
+
+.pregame-card {
+    width: 18rem;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    background: rgba(76, 175, 80, 0.3)
+
+}
+
+.link-item {
+    background: rgba(76, 175, 80, 0.3)
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    line-height: 30px;
+    text-align: center;
+
+
+
+}
+
+strong { font-weight: 600; }
+
+a, a:hover, a:focus {
+    color: #9b59b6;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+h1, h2 {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    color: #555;
+    line-height: 50px;
+}
+
