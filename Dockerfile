@@ -1,18 +1,37 @@
-FROM node:20-alpine
+FROM node:20-alpine3.16
+
+RUN apk add --update --no-cache python3
+RUN apk add --no-cache \
+  make g++ && \
+  apk add vips-dev fftw-dev --update-cache \
+  && rm -fR /var/cache/apk/*
+
+
 # Set the working directory to /app inside the container
 WORKDIR /app
+
 # Copy app files
-COPY . .
+COPY . /app
+
 # ==== BUILD =====
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
-RUN npm install -g npm@9.6.5 --no-package-lock --legacy-peer-deps
-RUN npm ci
+
+RUN npm install --legacy-peer-deps
+RUN npm install -g gatsby-cli --legacy-peer-deps
+
+# RUN npm install --package-lock-only
+
+
+#RUN npm ci --legacy-peer-deps
 # Build the app
-RUN npm run build
+RUN gatsby build  --verbose
+
 # ==== RUN =======
 # Set the env to "production"
 ENV NODE_ENV production
 # Expose the port on which the app will be running (3000 is the default that `serve` uses)
-EXPOSE 3000
+EXPOSE 80
 # Start the app
-CMD [ "npx", "serve", "build" ]
+#CMD gatsby serve --port 3000 --host 0.0.0.0
+
+CMD npm run deploy
