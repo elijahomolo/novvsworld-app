@@ -15,12 +15,12 @@ function Mid() {
 
                 <div className="row">
                     <div className="col-md-8 offset-md-2 text">
-                        <h1 className="wow fadeInLeftBig">The Pregame</h1>
+                        <h1 className="wow fadeInLeftBig">Haiya Makanjo (music video)</h1>
                         <div className="description wow fadeInLeftBig">
 
                         </div>
                         <div className="top-big-link wow fadeInUp">
-                            <a className="btn-link-1 scroll-link" href="/the-pregame">Listen Here</a>
+                            <a className="btn-link-1 scroll-link" href="https://www.youtube.com/watch?v=3wpx6rLPS2I" target="_blank">Watch Here</a>
                         </div>
                     </div>
                 </div>
